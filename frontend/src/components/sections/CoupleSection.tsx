@@ -35,13 +35,13 @@ export default function CoupleSection() {
             <div className="relative z-10 flex flex-col items-center" style={{ gap: "28px" }}>
 
                 <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.0, ease: [0.25, 1, 0.5, 1] }} className="flex flex-col items-center" style={{ gap: "10px", textAlign: "center", padding: "0 24px" }} >
-                    <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(9px, 2.2vw, 11px)", letterSpacing: "0.25em", textTransform: "uppercase", color: "#8a7a72", fontWeight: 600 }}>
+                    <p className="text-[14px] md:text-[11px]" style={{ fontFamily: "var(--font-body)", letterSpacing: "0.25em", textTransform: "uppercase", color: "#8a7a72", fontWeight: 600 }}>
                         {coupleSection.eyebrow}
                     </p>
-                    <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(26px, 7vw, 38px)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
+                    <h2 className="text-[55px] md:text-[38px]" style={{ fontFamily: "var(--font-display)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
                         {coupleSection.title}
                     </h2>
-                    <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(11px, 2.8vw, 13px)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
+                    <p className="text-[16px] md:text-[13px]" style={{ fontFamily: "var(--font-handwritten)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
                         {coupleSection.subtitle}
                     </p>
                     <div style={{ display: "flex", alignItems: "center", gap: "10px", width: "200px", marginTop: "4px" }}>

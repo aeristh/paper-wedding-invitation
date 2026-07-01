@@ -126,13 +126,13 @@ export default function WishesSection() {
             <div className="relative z-10 flex flex-col items-center" style={{ gap: "36px" }}>
 
                 <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.0, ease: [0.25, 1, 0.5, 1] }} className="flex flex-col items-center" style={{ gap: "10px", textAlign: "center", padding: "0 24px" }} >
-                    <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(9px, 2.2vw, 11px)", letterSpacing: "0.25em", textTransform: "uppercase", color: "#8a7a72", fontWeight: 600 }}>
+                    <p className="text-[14px] md:text-[11px]" style={{ fontFamily: "var(--font-body)", letterSpacing: "0.25em", textTransform: "uppercase", color: "#8a7a72", fontWeight: 600 }}>
                         {wishesSection.eyebrow}
                     </p>
-                    <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(26px, 7vw, 38px)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
+                    <h2 className="text-[55px] md:text-[38px]" style={{ fontFamily: "var(--font-display)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
                         {wishesSection.title}
                     </h2>
-                    <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(11px, 2.8vw, 13px)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
+                    <p className="text-[16px] md:text-[13px]" style={{ fontFamily: "var(--font-handwritten)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
                         {wishesSection.subtitle}
                     </p>
 
@@ -231,7 +231,7 @@ export default function WishesSection() {
                             </motion.div>
                         ) : (
                             <motion.div key="thankyou" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }} style={{ padding: "28px 24px 26px", display: "flex", flexDirection: "column", alignItems: "center", gap: "14px", textAlign: "center" }} >
-                                <motion.div initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.7, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }} style={{ width: 44, lineHeight: 0 }} >
+                                <motion.div initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.7, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }} style={{ width: 55, lineHeight: 0 }} >
                                     <Image src="/ornaments/pink-heart.png" alt="" width={44} height={44} style={{ width: "100%", height: "auto", objectFit: "contain" }} />
                                 </motion.div>
 
@@ -239,7 +239,7 @@ export default function WishesSection() {
                                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(20px, 5.5vw, 24px)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
                                         {thankYou.title}
                                     </h3>
-                                    <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(10px, 2.6vw, 12px)", color: "#4a4540", fontStyle: "italic", fontWeight: 300, lineHeight: 1.6, maxWidth: "90%", margin: "0 auto" }}>
+                                    <p className="text-[14px] md:text-[12px]" style={{ fontFamily: "var(--font-display)", color: "#4a4540", fontStyle: "italic", fontWeight: 300, lineHeight: 1.6, maxWidth: "90%", margin: "0 auto" }}>
                                         {thankYou.message}
                                     </p>
                                 </div>

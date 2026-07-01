@@ -37,8 +37,8 @@ export default function QuoteSection() {
 
                     <Image src="/ornaments/stamp.png" alt="" fill className="object-fill" />
 
-                    <div className="absolute flex flex-col items-center justify-center" style={{ top: "10%", left: "11%", right: "11%", bottom: "10%", gap: "clamp(6px, 1.2vh, 12px)", }} >
-                        <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.1, delay: 0.5, ease: [0.25, 1, 0.5, 1] }} style={{ fontFamily: "'Amiri', serif", fontSize: "clamp(13px, 3.4vw, 17px)", color: "#1a2850", lineHeight: 2.2, textAlign: "center", direction: "rtl", }} >
+                    <div className="absolute flex flex-col items-center justify-center" style={{ top: "-5%", left: "11%", right: "11%", bottom: "10%", gap: "clamp(6px, 1.2vh, 12px)", }} >
+                        <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.1, delay: 0.5, ease: [0.25, 1, 0.5, 1] }} style={{ fontFamily: "'Amiri', serif", fontSize: "clamp(15px, 4vw, 17px)", color: "#1a2850", lineHeight: 2.2, textAlign: "center", direction: "rtl", }} >
                             {quoteSection.arabic}
                         </motion.p>
 
@@ -50,7 +50,7 @@ export default function QuoteSection() {
                             <div style={{ flex: 1, height: "1px", backgroundColor: "#8a7a72" }} />
                         </motion.div>
 
-                        <motion.p initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.1, delay: 1.1, ease: [0.25, 1, 0.5, 1] }} style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(11px, 3vw, 14px)", color: "#2b2118", lineHeight: 1.8, textAlign: "center", fontWeight: 400, }} >
+                        <motion.p initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.1, delay: 1.1, ease: [0.25, 1, 0.5, 1] }} style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(12px, 3.2vw, 14px)", color: "#2b2118", lineHeight: 1.8, textAlign: "center", fontWeight: 400, marginTop: "clamp(4px, 1vh, 8px)" }} >
                             {quoteSection.translation}
                         </motion.p>
 
