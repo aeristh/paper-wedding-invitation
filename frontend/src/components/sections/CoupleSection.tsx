@@ -38,7 +38,7 @@ export default function CoupleSection() {
                     <p className="text-[14px] md:text-[11px]" style={{ fontFamily: "var(--font-body)", letterSpacing: "0.25em", textTransform: "uppercase", color: "#8a7a72", fontWeight: 600 }}>
                         {coupleSection.eyebrow}
                     </p>
-                    <h2 className="text-[55px] md:text-[38px]" style={{ fontFamily: "var(--font-display)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
+                    <h2 className="text-[48px] md:text-[38px]" style={{ fontFamily: "var(--font-display)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
                         {coupleSection.title}
                     </h2>
                     <p className="text-[16px] md:text-[13px]" style={{ fontFamily: "var(--font-handwritten)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
@@ -72,7 +72,7 @@ export default function CoupleSection() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col justify-center items-center" style={{ flex: "0 0 52%", paddingLeft: "6%", paddingTop: "14%", gap: "6px", textAlign: "center" }}>
+                        <div className="flex flex-col justify-center items-center pt-[6%] md:pt-[14%]" style={{ flex: "0 0 52%", paddingLeft: "6%", gap: "6px", textAlign: "center" }}>
                             <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(15px, 4vw, 22px)", color: "#1a2850", fontWeight: 600, lineHeight: 1.2 }}>
                                 {couple.groom.fullName}
                             </p>
@@ -104,7 +104,7 @@ export default function CoupleSection() {
                     </div>
 
                     <div className="absolute inset-0 flex" style={{ padding: "6% 4%" }}>
-                        <div className="flex flex-col justify-center items-center" style={{ flex: "0 0 52%", paddingRight: "6%", paddingTop: "14%", gap: "6px", textAlign: "center" }}>
+                        <div className="flex flex-col justify-center items-center pt-[6%] md:pt-[14%]" style={{ flex: "0 0 52%", paddingRight: "6%", gap: "6px", textAlign: "center" }}>
                             <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(15px, 4vw, 22px)", color: "#1a2850", fontWeight: 600, lineHeight: 1.2 }}>
                                 {couple.bride.fullName}
                             </p>

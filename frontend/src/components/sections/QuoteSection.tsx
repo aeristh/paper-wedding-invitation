@@ -37,7 +37,7 @@ export default function QuoteSection() {
 
                     <Image src="/ornaments/stamp.png" alt="" fill className="object-fill" />
 
-                    <div className="absolute flex flex-col items-center justify-center" style={{ top: "-5%", left: "11%", right: "11%", bottom: "10%", gap: "clamp(6px, 1.2vh, 12px)", }} >
+                    <div className="absolute flex flex-col items-center justify-center" style={{ top: "6%", left: "11%", right: "11%", bottom: "8%", gap: "clamp(6px, 1.2vh, 12px)", }} >
                         <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.1, delay: 0.5, ease: [0.25, 1, 0.5, 1] }} style={{ fontFamily: "'Amiri', serif", fontSize: "clamp(15px, 4vw, 17px)", color: "#1a2850", lineHeight: 2.2, textAlign: "center", direction: "rtl", }} >
                             {quoteSection.arabic}
                         </motion.p>

@@ -53,7 +53,7 @@ export default function StorySection() {
                     <p className="text-[14px] md:text-[11px]" style={{ fontFamily: "var(--font-body)", letterSpacing: "0.25em", textTransform: "uppercase", color: "#8a7a72", fontWeight: 600 }}>
                         {storySection.eyebrow}
                     </p>
-                    <h2 className="text-[55px] md:text-[38px]" style={{ fontFamily: "var(--font-display)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
+                    <h2 className="text-[48px] md:text-[38px]" style={{ fontFamily: "var(--font-display)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
                         {storySection.title}
                     </h2>
                     <p className="text-[16px] md:text-[13px]" style={{ fontFamily: "var(--font-handwritten)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
@@ -78,14 +78,14 @@ export default function StorySection() {
                     <div style={{ width: "78%", position: "relative" }}>
                         <AnimatePresence mode="wait">
                             <motion.div key={current} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4, ease: "easeInOut" }} style={{ transform: `rotate(${rotates[current % rotates.length]})`, position: "relative", filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.16))", }} >
-                                <Image src="/ornaments/paper-story.png" alt="" width={600} height={900} style={{ width: "100%", height: "auto", display: "block" }} />
+                                <Image src="/ornaments/blank-paper.png" alt="" width={600} height={900} style={{ width: "100%", height: "auto", display: "block" }} />
 
-                                <div className="absolute inset-0 flex flex-col" style={{ padding: "8% 10% 10% 10%" }} >
+                                <div className="absolute inset-0 flex flex-col" style={{ padding: "8% 10% 10% 10%", justifyContent: "center" }} >
                                     <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(9px, 2vw, 11px)", color: "#b8a99e", letterSpacing: "0.15em", fontWeight: 600, alignSelf: "flex-start", }}>
                                         {item.number}
                                     </p>
 
-                                    <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(18px, 5vw, 24px)", color: "#1a2850", fontWeight: 500, textAlign: "center", lineHeight: 1.2, marginTop: "4px", }}>
+                                    <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(24px, 6.5vw, 32px)", color: "#1a2850", fontWeight: 500, textAlign: "center", lineHeight: 1.2, marginTop: "4px", }}>
                                         {item.title}
                                     </p>
 
@@ -97,7 +97,7 @@ export default function StorySection() {
                                         </div>
                                     </div>
 
-                                    <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(10px, 2.6vw, 12px)", color: "#4a4540", lineHeight: 1.8, textAlign: "center", fontWeight: 400, flex: 1, }}>
+                                    <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(13px, 3.4vw, 16px)", color: "#4a4540", lineHeight: 1.8, textAlign: "center", fontWeight: 400, flex: 1, }}>
                                         {item.text}
                                     </p>
                                 </div>
