@@ -27,6 +27,7 @@
 .font-script { font-family: var(--font-script), cursive; }
 .font-display { font-family: var(--font-display), serif; }
 .font-body { font-family: var(--font-body), sans-serif; }
+.font-handwritten { font-family: var(--font-handwritten), cursive; }
 
 @keyframes twinkle {
   0%, 100% { opacity: .25; transform: scale(.85); }

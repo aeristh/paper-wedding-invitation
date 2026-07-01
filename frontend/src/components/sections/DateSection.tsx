@@ -138,6 +138,9 @@ export default function DateSection() {
                     <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(26px, 7vw, 38px)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
                         {dateSection.title}
                     </h2>
+                    <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(11px, 2.8vw, 13px)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
+                        {dateSection.subtitle}
+                    </p>
                     <div style={{ display: "flex", alignItems: "center", gap: "10px", width: "200px", marginTop: "4px" }}>
                         <div style={{ flex: 1, height: "1px", backgroundColor: "#8a7a72" }} />
                         <div style={{ width: "32px", lineHeight: 0, flexShrink: 0 }}>

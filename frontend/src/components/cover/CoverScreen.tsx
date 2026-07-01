@@ -42,29 +42,29 @@ export default function CoverScreen({ onOpen, guestName = "Tamu Undangan" }: Cov
 
             <div className="pointer-events-none absolute inset-0 z-0" style={{ background: "radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.06) 100%)" }} />
 
-            <motion.div className="pointer-events-none absolute z-10" initial={{ opacity: 0 }} animate={{ opacity: 0.85 }} transition={{ duration: 1.0, delay: 0.1 }} style={{ width: "200px", top: "0px", right: "-10px", transform: "rotate(-180deg)" }} >
+            <motion.div className="pointer-events-none absolute z-10" initial={{ opacity: 0 }} animate={{ opacity: 0.85 }} transition={{ duration: 1.0, delay: 0.1 }} style={{ width: "clamp(120px, 41.7vw, 200px)", top: "0px", right: "-10px", transform: "rotate(-180deg)" }} >
                 <Image src="/ornaments/corner.png" alt="" width={140} height={140} style={{ width: "100%", height: "auto", objectFit: "contain" }} />
             </motion.div>
 
-            <motion.div className="pointer-events-none absolute z-10" initial={{ opacity: 0 }} animate={{ opacity: 0.85 }} transition={{ duration: 1.0, delay: 0.1 }} style={{ width: "170px", bottom: "0px", left: "-10px", transform: "rotate(180deg)" }} >
+            <motion.div className="pointer-events-none absolute z-10" initial={{ opacity: 0 }} animate={{ opacity: 0.85 }} transition={{ duration: 1.0, delay: 0.1 }} style={{ width: "clamp(105px, 35.4vw, 170px)", bottom: "0px", left: "-10px", transform: "rotate(180deg)" }} >
                 <Image src="/ornaments/corner.png" alt="" width={200} height={200} style={{ width: "100%", height: "auto", objectFit: "contain", transform: "scaleX(-1) scaleY(-1)" }} />
             </motion.div>
 
-            <motion.div className="pointer-events-none absolute z-10" initial={{ opacity: 0, rotate: -15 }} animate={{ opacity: 0.85, rotate: [-15, -20, -10, -15] }} transition={{ opacity: { duration: 0.6, delay: 2.0 }, rotate: { duration: 3, delay: 2.6, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }, }} style={{ width: "200px", bottom: "165px", left: "-20px" }} >
+            <motion.div className="pointer-events-none absolute z-10 bottom-[28vh] left-[-10px] sm:bottom-[165px] sm:left-[-20px]" initial={{ opacity: 0, rotate: -15 }} animate={{ opacity: 0.85, rotate: [-15, -20, -10, -15] }} transition={{ opacity: { duration: 0.6, delay: 2.0 }, rotate: { duration: 3, delay: 2.6, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }, }} style={{ width: "clamp(120px, 41.7vw, 200px)" }} >
                 <Image src="/ornaments/letter.png" alt="" width={160} height={160} style={{ width: "100%", height: "auto", objectFit: "contain" }} />
             </motion.div>
 
-            <motion.div className="pointer-events-none absolute z-10" initial={{ opacity: 0, rotate: 0 }} animate={{ opacity: 0.85, rotate: [0, -8, 8, 0] }} transition={{ opacity: { duration: 0.6, delay: 2.2 }, rotate: { duration: 2.5, delay: 2.8, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }, }} style={{ width: "40px", top: "60px", left: "70px" }} >
+            <motion.div className="pointer-events-none absolute z-10 top-[16vh] left-[10vw] sm:top-[60px] sm:left-[70px]" initial={{ opacity: 0, rotate: 0 }} animate={{ opacity: 0.85, rotate: [0, -8, 8, 0] }} transition={{ opacity: { duration: 0.6, delay: 2.2 }, rotate: { duration: 2.5, delay: 2.8, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }, }} style={{ width: "clamp(26px, 8.3vw, 40px)" }} >
                 <Image src="/ornaments/loves.png" alt="" width={100} height={100} style={{ width: "100%", height: "auto", objectFit: "contain" }} />
             </motion.div>
 
-            <motion.div className="pointer-events-none absolute z-10" initial={{ opacity: 0, rotate: 0 }} animate={{ opacity: 0.85, rotate: [0, 10, -10, 0] }} transition={{ opacity: { duration: 0.6, delay: 2.4 }, rotate: { duration: 2.8, delay: 3.0, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }, }} style={{ width: "100px", top: "160px", right: "20px" }} >
+            <motion.div className="pointer-events-none absolute z-10 top-[32vh] right-[10vw] sm:top-[160px] sm:right-[20px]" initial={{ opacity: 0, rotate: 0 }} animate={{ opacity: 0.85, rotate: [0, 10, -10, 0] }} transition={{ opacity: { duration: 0.6, delay: 2.4 }, rotate: { duration: 2.8, delay: 3.0, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }, }} style={{ width: "clamp(62px, 20.8vw, 100px)" }} >
                 <Image src="/ornaments/pink-heart.png" alt="" width={100} height={100} style={{ width: "100%", height: "auto", objectFit: "contain" }} />
             </motion.div>
 
-            <div className="relative z-10 flex flex-col items-center px-8 w-full" style={{ gap: "14px" }}>
+            <div className="relative z-10 flex flex-col items-center w-full" style={{ gap: "clamp(14px, 2.8vh, 26px)", paddingLeft: "clamp(20px, 6vw, 32px)", paddingRight: "clamp(20px, 6vw, 32px)", paddingTop: "clamp(0px, 5vh, 32px)", paddingBottom: "clamp(0px, 5vh, 32px)" }}>
 
-                <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} style={{ color: "#4a4540", letterSpacing: "0.28em", fontFamily: "var(--font-body)", fontSize: "10px", fontWeight: 600 }} className="uppercase" >
+                <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} style={{ color: "#4a4540", letterSpacing: "0.28em", fontFamily: "var(--font-body)", fontSize: "10px", fontWeight: 600 }} className="uppercase -mt-6 sm:mt-0" >
                     {cover.eyebrow}
                 </motion.p>
 
@@ -72,14 +72,14 @@ export default function CoverScreen({ onOpen, guestName = "Tamu Undangan" }: Cov
 
                 <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.7, ease: "easeOut" }} className="text-center" style={{ lineHeight: 1, position: "relative" }} >
                     <div style={{ position: "relative", display: "inline-block" }}>
-                        <h1 style={{ fontFamily: "var(--font-script)", color: "#1a2850", fontSize: "clamp(56px, 15vw, 76px)", lineHeight: 1.05, textShadow: "0 1px 2px rgba(0,0,0,0.08)" }}>
+                        <h1 className="text-[clamp(72px,20vw,84px)] sm:text-[76px]" style={{ fontFamily: "var(--font-script)", color: "#1a2850", lineHeight: 1.05, textShadow: "0 1px 2px rgba(0,0,0,0.08)" }}>
                             {couple.groom.nickname}
                         </h1>
                         <span style={{ position: "absolute", bottom: "-12px", left: "50%", transform: "translateX(-50%)", fontFamily: "var(--font-body)", color: "#e879a0", fontSize: "18px", fontWeight: 600, letterSpacing: "0.15em", lineHeight: 1 }}>
                             &amp;
                         </span>
                     </div>
-                    <h1 style={{ fontFamily: "var(--font-script)", color: "#1a2850", fontSize: "clamp(56px, 15vw, 76px)", lineHeight: 1.05, textShadow: "0 1px 2px rgba(0,0,0,0.08)", marginTop: "28px" }}>
+                    <h1 className="text-[clamp(72px,20vw,84px)] sm:text-[76px]" style={{ fontFamily: "var(--font-script)", color: "#1a2850", lineHeight: 1.05, textShadow: "0 1px 2px rgba(0,0,0,0.08)", marginTop: "28px" }}>
                         {couple.bride.nickname}
                     </h1>
                 </motion.div>
@@ -88,7 +88,7 @@ export default function CoverScreen({ onOpen, guestName = "Tamu Undangan" }: Cov
                     {cover.date}
                 </motion.p>
 
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 1.1 }} style={{ display: "flex", alignItems: "center", gap: "10px", width: "220px" }} >
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 1.1 }} style={{ display: "flex", alignItems: "center", gap: "10px", width: "min(220px, 70vw)" }} >
                     <div style={{ flex: 1, height: "1px", backgroundColor: "#8a7a72" }} />
                     <div style={{ width: "48px", lineHeight: 0, flexShrink: 0 }}>
                         <Image src="/ornaments/red-ribbon.png" alt="" width={48} height={48} style={{ width: "100%", height: "auto", objectFit: "contain" }} />
@@ -105,7 +105,7 @@ export default function CoverScreen({ onOpen, guestName = "Tamu Undangan" }: Cov
                     </p>
                 </motion.div>
 
-                <motion.button initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 1.5 }} whileTap={{ scale: 0.97 }} onClick={onOpen} className="cursor-pointer" style={{ display: "flex", alignItems: "center", gap: "7px", fontFamily: "var(--font-body)", fontSize: "10px", fontWeight: 600, letterSpacing: "0.22em", color: "#f3ead9", backgroundColor: "#1a2850", border: "none", borderRadius: "0px", padding: "13px 32px", transition: "background-color 0.2s ease", boxShadow: "0 4px 16px rgba(26,40,80,0.25)", }} onMouseEnter={e => { e.currentTarget.style.backgroundColor = "#243870"; }} onMouseLeave={e => { e.currentTarget.style.backgroundColor = "#1a2850"; }} >
+                <motion.button initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 1.5 }} whileTap={{ scale: 0.97 }} onClick={onOpen} className="cursor-pointer mt-6 sm:mt-0" style={{ display: "flex", alignItems: "center", gap: "7px", fontFamily: "var(--font-body)", fontSize: "10px", fontWeight: 600, letterSpacing: "0.22em", color: "#f3ead9", backgroundColor: "#1a2850", border: "none", borderRadius: "0px", padding: "clamp(11px, 3vw, 13px) clamp(22px, 7vw, 32px)", transition: "background-color 0.2s ease", boxShadow: "0 4px 16px rgba(26,40,80,0.25)", }} onMouseEnter={e => { e.currentTarget.style.backgroundColor = "#243870"; }} onMouseLeave={e => { e.currentTarget.style.backgroundColor = "#1a2850"; }} >
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="2" y="4" width="20" height="16" rx="2" stroke="#f3ead9" strokeWidth="2" />
                         <path d="M2 7L12 13L22 7" stroke="#f3ead9" strokeWidth="2" strokeLinecap="round" />

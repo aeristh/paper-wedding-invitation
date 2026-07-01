@@ -35,10 +35,13 @@ export default function CoupleSection() {
             <div className="relative z-10 flex flex-col items-center" style={{ gap: "28px" }}>
 
                 <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.0, ease: [0.25, 1, 0.5, 1] }} className="flex flex-col items-center" style={{ gap: "10px", textAlign: "center", padding: "0 24px" }} >
+                    <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(9px, 2.2vw, 11px)", letterSpacing: "0.25em", textTransform: "uppercase", color: "#8a7a72", fontWeight: 600 }}>
+                        {coupleSection.eyebrow}
+                    </p>
                     <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(26px, 7vw, 38px)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2 }}>
                         {coupleSection.title}
                     </h2>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(11px, 2.8vw, 13px)", color: "#4a4540", fontStyle: "italic", fontWeight: 300, lineHeight: 1.6 }}>
+                    <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(11px, 2.8vw, 13px)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
                         {coupleSection.subtitle}
                     </p>
                     <div style={{ display: "flex", alignItems: "center", gap: "10px", width: "200px", marginTop: "4px" }}>
@@ -69,7 +72,7 @@ export default function CoupleSection() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col justify-center items-center" style={{ flex: "0 0 52%", paddingLeft: "6%", gap: "6px", textAlign: "center" }}>
+                        <div className="flex flex-col justify-center items-center" style={{ flex: "0 0 52%", paddingLeft: "6%", paddingTop: "14%", gap: "6px", textAlign: "center" }}>
                             <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(15px, 4vw, 22px)", color: "#1a2850", fontWeight: 600, lineHeight: 1.2 }}>
                                 {couple.groom.fullName}
                             </p>
@@ -84,7 +87,7 @@ export default function CoupleSection() {
                                 </span>
                             </a>
                             <div style={{ width: "40px", height: "1px", backgroundColor: "#c4b8b0", margin: "4px 0" }} />
-                            <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(10px, 2.5vw, 12px)", color: "#4a4540", lineHeight: 1.9, fontWeight: 500 }}>
+                            <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(10px, 2.5vw, 12px)", color: "#4a4540", lineHeight: 1.9, fontWeight: 600 }}>
                                 {couple.groom.order} dari<br />
                                 {couple.groom.father}<br />
                                 {couple.groom.mother}
@@ -101,7 +104,7 @@ export default function CoupleSection() {
                     </div>
 
                     <div className="absolute inset-0 flex" style={{ padding: "6% 4%" }}>
-                        <div className="flex flex-col justify-center items-center" style={{ flex: "0 0 52%", paddingRight: "6%", gap: "6px", textAlign: "center" }}>
+                        <div className="flex flex-col justify-center items-center" style={{ flex: "0 0 52%", paddingRight: "6%", paddingTop: "14%", gap: "6px", textAlign: "center" }}>
                             <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(15px, 4vw, 22px)", color: "#1a2850", fontWeight: 600, lineHeight: 1.2 }}>
                                 {couple.bride.fullName}
                             </p>
@@ -116,7 +119,7 @@ export default function CoupleSection() {
                                 </span>
                             </a>
                             <div style={{ width: "40px", height: "1px", backgroundColor: "#c4b8b0", margin: "4px 0" }} />
-                            <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(10px, 2.5vw, 12px)", color: "#4a4540", lineHeight: 1.9, fontWeight: 500 }}>
+                            <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(10px, 2.5vw, 12px)", color: "#4a4540", lineHeight: 1.9, fontWeight: 600 }}>
                                 {couple.bride.order} dari<br />
                                 {couple.bride.father}<br />
                                 {couple.bride.mother}

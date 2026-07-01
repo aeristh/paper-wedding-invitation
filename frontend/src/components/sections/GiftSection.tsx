@@ -54,7 +54,7 @@ export default function GiftSection() {
                     <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(26px, 7vw, 38px)", color: "#1a2850", fontWeight: 400, lineHeight: 1.2, }}>
                         {giftSection.title}
                     </h2>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(11px, 2.8vw, 13px)", color: "#4a4540", fontStyle: "italic", fontWeight: 300, lineHeight: 1.6, }}>
+                    <p style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(11px, 2.8vw, 13px)", color: "#11212d", fontWeight: 400, lineHeight: 1.6 }}>
                         {giftSection.subtitle}
                     </p>
                     <div style={{ display: "flex", alignItems: "center", gap: "10px", width: "200px", marginTop: "4px" }}>

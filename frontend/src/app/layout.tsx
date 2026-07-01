@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Great_Vibes, Cormorant_Garamond, Lato, Amiri } from "next/font/google";
+
+import { Great_Vibes, Cormorant_Garamond, Lato, Amiri, Kalam } from "next/font/google";
 import "./globals.css";
 import { weddingData } from "@/data/weddingData";
+
+const kalam = Kalam({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-handwritten"
+});
 
 const greatVibes = Great_Vibes({
   subsets: ["latin"],
@@ -10,7 +17,7 @@ const greatVibes = Great_Vibes({
 });
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-display"
 });
 const lato = Lato({
@@ -31,7 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
-      <body className={`${greatVibes.variable} ${cormorant.variable} ${lato.variable} ${amiri.variable} bg-black font-body antialiased`}>
+      <body className={`${greatVibes.variable} ${cormorant.variable} ${lato.variable} ${amiri.variable} ${kalam.variable} bg-black font-body antialiased`}>
         {children}
       </body>
     </html>

@@ -44,6 +44,7 @@ export interface WeddingData {
         source: string;
     };
     coupleSection: {
+        eyebrow: string;
         title: string;
         subtitle: string;
         groomLabel: string;
@@ -73,6 +74,7 @@ export interface WeddingData {
     dateSection: {
         eyebrow: string;
         title: string;
+        subtitle: string;
         countdownLabel: string;
         countdown: {
             days: string;
@@ -235,6 +237,7 @@ export const weddingData: WeddingData = {
         source: "QS. Ar-Rum : 21",
     },
     coupleSection: {
+        eyebrow: "Meet The Couple",
         title: "The Happy Couple",
         subtitle: "Tuhan telah menentukan, dengan-Nya kami dipersatukan",
         groomLabel: "The Groom",
@@ -289,6 +292,7 @@ export const weddingData: WeddingData = {
     dateSection: {
         eyebrow: "Mark Your Calendar",
         title: "Save the Date",
+        subtitle: "Satu tanggal, satu janji, dan satu awal bersama-sama",
         countdownLabel: "Menghitung hingga kami resmi bersatu",
         countdown: {
             days: "Hari",
@@ -302,7 +306,7 @@ export const weddingData: WeddingData = {
         calendarLocation: "Indonesia",
     },
     rsvpSection: {
-        eyebrow: "Konfirmasi Kehadiran",
+        eyebrow: "Confirm Attendance",
         title: "RSVP",
         subtitle: "Mohon konfirmasi kehadiran Anda paling lambat 7 hari sebelum acara, agar kami dapat mempersiapkan segalanya dengan baik.",
         form: {
@@ -332,7 +336,7 @@ export const weddingData: WeddingData = {
         },
     },
     locationSection: {
-        eyebrow: "Tandai di Petamu",
+        eyebrow: "Event Details",
         title: "Location",
         subtitle: "Kami menantikan kehadiran Anda di momen istimewa ini",
         eventsLabel: "Rangkaian Acara",
@@ -382,7 +386,7 @@ export const weddingData: WeddingData = {
         ],
     },
     wishesSection: {
-        eyebrow: "Doa & Ucapan",
+        eyebrow: "Word For Us",
         title: "Wishes & Prayers",
         subtitle: "Setiap doa dan ucapan dari kalian adalah kebahagiaan tersendiri bagi kami",
         form: {

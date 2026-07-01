@@ -24,9 +24,9 @@ export default function HeroSection() {
                     <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.7, delay: 1.9, ease: "easeOut" }} style={{ width: "36px", height: "1px", backgroundColor: "rgba(184,169,158,0.6)", transformOrigin: "center", }} />
                 </motion.div>
 
-                <div style={{ position: "relative", width: "100%", textAlign: "center" }}>
+                <div className="mt-[5vh] sm:mt-0" style={{ position: "relative", width: "100%", textAlign: "center" }}>
                     <div style={{ position: "relative", display: "block", paddingBottom: "20px" }}>
-                        <motion.h1 initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.4, delay: 1.8, ease: [0.16, 1, 0.3, 1] }} style={{ fontFamily: "var(--font-script)", color: "#f3ead9", fontSize: "clamp(56px, 15vw, 76px)", lineHeight: 1.2, textShadow: "0 2px 16px rgba(0,0,0,0.45)", display: "block", padding: "4px 8px", transform: "translateX(-20px)", }} >
+                        <motion.h1 initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.4, delay: 1.8, ease: [0.16, 1, 0.3, 1] }} className="text-[clamp(74px,23vw,96px)] sm:text-[76px]" style={{ fontFamily: "var(--font-script)", color: "#f3ead9", lineHeight: 1.2, textShadow: "0 2px 16px rgba(0,0,0,0.45)", display: "block", padding: "4px 8px", transform: "translateX(-20px)", }} >
                             {couple.groom.nickname}
                         </motion.h1>
                         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, delay: 2.4, ease: "easeOut" }} style={{ fontFamily: "var(--font-body)", color: "#f3ead9", fontSize: "18px", fontWeight: 600, letterSpacing: "0.15em", lineHeight: 1, }} >
@@ -34,14 +34,14 @@ export default function HeroSection() {
                         </motion.p>
                     </div>
 
-                    <motion.h1 initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.4, delay: 2.1, ease: [0.16, 1, 0.3, 1] }} style={{ fontFamily: "var(--font-script)", color: "#f3ead9", fontSize: "clamp(56px, 15vw, 76px)", lineHeight: 1.2, textShadow: "0 2px 16px rgba(0,0,0,0.45)", display: "block", padding: "4px 8px", transform: "translateX(20px)", }} >
+                    <motion.h1 initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.4, delay: 2.1, ease: [0.16, 1, 0.3, 1] }} className="text-[clamp(74px,23vw,96px)] sm:text-[76px]" style={{ fontFamily: "var(--font-script)", color: "#f3ead9", lineHeight: 1.2, textShadow: "0 2px 16px rgba(0,0,0,0.45)", display: "block", padding: "4px 8px", transform: "translateX(20px)", }} >
                         {couple.bride.nickname}
                     </motion.h1>
                 </div>
 
                 <div className="flex flex-col items-center" style={{ gap: "16px" }}>
 
-                    <motion.div initial={{ opacity: 0, scaleX: 0.6 }} animate={{ opacity: 1, scaleX: 1 }} transition={{ duration: 1.0, delay: 2.8, ease: "easeOut" }} style={{ display: "flex", alignItems: "center", gap: "10px", width: "220px" }} >
+                    <motion.div initial={{ opacity: 0, scaleX: 0.6 }} animate={{ opacity: 1, scaleX: 1 }} transition={{ duration: 1.0, delay: 2.8, ease: "easeOut" }} className="mb-[4vh] sm:mb-0" style={{ display: "flex", alignItems: "center", gap: "10px", width: "220px" }} >
                         <div style={{ flex: 1, height: "1px", backgroundColor: "rgba(138,122,114,0.7)" }} />
                         <div style={{ width: "48px", lineHeight: 0, flexShrink: 0 }}>
                             <Image src="/ornaments/red-ribbon.png" alt="" width={48} height={48} style={{ width: "100%", height: "auto", objectFit: "contain" }} />

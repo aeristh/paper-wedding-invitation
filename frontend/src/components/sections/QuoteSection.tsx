@@ -50,7 +50,7 @@ export default function QuoteSection() {
                             <div style={{ flex: 1, height: "1px", backgroundColor: "#8a7a72" }} />
                         </motion.div>
 
-                        <motion.p initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.1, delay: 1.1, ease: [0.25, 1, 0.5, 1] }} style={{ fontFamily: "var(--font-display)", fontSize: "clamp(11px, 3vw, 14px)", color: "#2b2118", lineHeight: 1.8, textAlign: "center", fontWeight: 300, fontStyle: "italic", }} >
+                        <motion.p initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 1.1, delay: 1.1, ease: [0.25, 1, 0.5, 1] }} style={{ fontFamily: "var(--font-handwritten)", fontSize: "clamp(11px, 3vw, 14px)", color: "#2b2118", lineHeight: 1.8, textAlign: "center", fontWeight: 400, }} >
                             {quoteSection.translation}
                         </motion.p>
 
